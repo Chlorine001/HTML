@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美化第一步</title>
+    <style>
+        /* 元素选择器：找元素(h1、p、img) */
+        h1{
+            /* 字体颜色 */
+            color: white;
+            /* 字体大小 px是像素单位*/
+            /* 在Chrome浏览器，最小值为12px */
+            font-size: 15px;
+            background-color: blue;
+            /* 文本水平居中 */
+            text-align: center;
+            /* 行高（垂直居中） */
+            line-height: 100px;
+        }
+        img{
+            width: auto;
+            height: 100px;
+        }
+        /* 类选择器：指定多个元素 */
+        .hot{
+            color: sandybrown;
+        }
+        .cool{
+            color: skyblue;
+        }
+        /* 一般不用id选择器，用class选择器 */
+        #aac{
+            color: red;
+        }
+        /* 通配符选择器:所有元素 （用法：*{}）*/
+    </style>
+</head>
+<body>
+    <h1>Hi!</h1>
+    <img src="1.jpg" alt="">
+    <h2 id="aac">YYYYYYYYY</h2>
+    <p class="hot">红</p>
+    <p class="hot">黄</p>
+    <p class="cool">蓝</p>
+    <p class="cool">绿</p>
+    <h3>hello h3</h3>
+    <p>hello p</p>
+    <a href="">hello a</a>
+   
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+相同选择器：
+    后面会覆盖前面的
+不同选择器：
+    ID(100)>CLASS(10)>element(1)
+层级选择器：
+    按权重累加计算（权重值大的）
+    
+    !important -> 最大权重
+
+    .box h1{
+        color: blue !important;
+    }

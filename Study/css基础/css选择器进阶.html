@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器进阶</title>
+    <style>
+        /* 层级选择器（用法：两个选择器用空格间隔开） */
+        .box1 h1{
+            color: red;
+        }
+        /* 组合选择器（用法：两个选择器用逗号间隔开） */
+        .box1 h2,.box2 h2{
+            color: royalblue;
+        }
+        /* 伪类选择器：添加行为（用法：选择器:行为） */
+        .cc{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        /* hover:鼠标悬浮 */
+        .cc:hover{
+            background-color: green;
+        }
+        /* 伪元素选择器：添加元素
+            ·用法1：选择器::before 
+            ·用法2： 选择器::after
+            可以用来装饰 */
+        h1::before,h1::after{
+            content:"——————"
+        }
+        .box2::after{
+            content:"I Love You!"
+        }
+
+    </style>
+</head>
+<body>
+    <!-- div相当于class的容器 -->
+    <div class="box1">
+        <h1>Hi!</h1>
+        <h2>HHH!</h2>
+    </div>
+    <div class="box2">
+        <h1>Hi!</h1>
+        <h2>HHH!</h2>
+    </div>
+    <div class="cc"></div>
+
+
+</body>
+</html>

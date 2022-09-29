@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单容器：form标签 -->
+    <form action="">
+        <!-- label中的for可以方便获取光标 -->
+        <label for="username">用户名</label>
+        <!-- 点击用户名指向id为username的input -->
+        <input id="username" type="text" placeholder="用户名">
+        <label for="password">密码</label>
+        <input id="password" type="password" placeholder="密码">
+        <!-- 单选框 -->
+        <label>男</label>
+        <input name="sex" type="radio">
+        <label>女</label>
+        <input name ="sex"type="radio">
+        <!-- 下拉选项 -->
+        <select name="" id="">
+            <option value="">男</option>
+            <option value="">女</option>
+        </select>
+        <!-- 复选框 -->
+        <input type="checkbox">
+        <input type="checkbox">
+        <!-- 提交数据，value控制文本 -->
+        <input type="submit" value="登录">
+        <!-- button不带任何功能的按钮，需要进一步设置 -->
+        <input type="button" value="按钮">
+    </form>
+</body>
+</html>
